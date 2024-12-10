@@ -2,6 +2,12 @@
 
 set ${SET_X:+-x} -eou pipefail
 
+# Bazzite Repos
+dnf5 -y copr enable kylegospo/bazzite
+dnf5 -y copr enable kylegospo/bazzite-multilib
+dnf5 -y copr enable kylegospo/LatencyFleX
+
+
 sed -i "0,/enabled=0/{s/enabled=0/enabled=1/}" /etc/yum.repos.d/negativo17-fedora-multimedia.repo
 
 STEAM_PACKAGES=(

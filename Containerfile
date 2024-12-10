@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin:latest
+FROM ghcr.io/ublue-os/bluefin-dx:latest
 
 ## Nvidia users use this instead
 # FROM ghcr.io/ublue-os/base-nvidia:latest
@@ -12,7 +12,7 @@ FROM ghcr.io/ublue-os/bluefin:latest
 ## Install applications
 # Anything in Fedora
 
-RUN dnf5 install vlc emacs
+RUN dnf5 -y install vlc emacs
 
 ## Add COPRs
 # RUN dnf copr enable (copr-author/name)

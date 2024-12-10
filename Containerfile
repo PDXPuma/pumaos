@@ -1,4 +1,4 @@
-FROM ghcr.io/ublue-os/bluefin-dx:latest
+FROM ghcr.io/ublue-os/bluefin-dx:stable
 
 ## Nvidia users use this instead
 # FROM ghcr.io/ublue-os/base-nvidia:latest

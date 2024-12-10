@@ -11,8 +11,9 @@ FROM ghcr.io/ublue-os/bluefin-dx:stable
 
 ## Install applications
 # Anything in Fedora
-
+COPY / / 
 RUN dnf5 -y install vlc emacs
+RUN ./steam.sh
 
 ## Add COPRs
 # RUN dnf copr enable (copr-author/name)

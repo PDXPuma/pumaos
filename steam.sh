@@ -6,6 +6,8 @@ set ${SET_X:+-x} -eou pipefail
 dnf5 -y copr enable kylegospo/bazzite
 dnf5 -y copr enable kylegospo/bazzite-multilib
 dnf5 -y copr enable kylegospo/LatencyFleX
+# OBS-VKcapture
+dnf5 -y copr enable kylegospo/obs-vkcapture
 
 
 sed -i "0,/enabled=0/{s/enabled=0/enabled=1/}" /etc/yum.repos.d/negativo17-fedora-multimedia.repo

@@ -14,6 +14,7 @@ FROM ghcr.io/ublue-os/bluefin-dx:stable
 COPY / / 
 RUN dnf5 -y install vlc emacs
 RUN ./steam.sh
+RUN ./desktop-apps.sh
 
 ## Add COPRs
 # RUN dnf copr enable (copr-author/name)

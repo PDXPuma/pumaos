@@ -1,3 +1,7 @@
+#!/usr/bin/bash
+
+set ${SET_X:+-x} -eou pipefail
+
 # Zed because why not?
 curl -Lo /tmp/zed.tar.gz \
     https://zed.dev/api/releases/stable/latest/zed-linux-x86_64.tar.gz
